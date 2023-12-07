@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pixelify sans;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)),url(download2.gif);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: ghostwhite;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: ghostwhite;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-55%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-45%);
+    font-size: 20px;
+    margin-top: 80px;
+    line-height: 30px;
+    width: 475px;
+    padding: 15px 0;
+    text-align: center;
+    margin: -115px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid ghostwhite;
+    background: transparent;
+    color: white;
+}
+.content h2{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-45%);
+    font-size: 20px;
+    margin-top: 80px;
+    line-height: 30px;
+    width: 475px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 55px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid ghostwhite;
+    background: transparent;
+    color: white;
+    
+}
